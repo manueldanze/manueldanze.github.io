@@ -11,6 +11,30 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.video-container {
+				position: relative;
+				width: 100%;
+				max-width: 100%; /* Set max-width to 100% to scale with available space */
+				margin: 0 auto; /* Center the video container horizontally */
+				overflow: hidden;
+			}
+		
+			.video-container video {
+				width: 100%;
+				height: auto;
+				display: block;
+				object-fit: cover;
+				transition: transform 0.2s ease-out;
+				transform-origin: center center;
+			}
+		
+			.video-container:hover video {
+				transform: scale(1.05);
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -60,34 +84,45 @@
 
 								<article>
 									<header>
-										<h2>The Rogue Quarter</h2>
+										<h2>Project Massive</h2>
 									</header>
 									
-									<a class="image fit"><img src="images/RogueQuarter_TitleScreen.png" alt="" /></a>
+									<div class="image-container">
+										<div class="video-container"> <!-- Add the video-container class here -->
+											<video src="images/ProjectMassivePreview.mp4" class="gif" id="animatedGif1" loop muted playsinline></video>
+										</div>
+									</div>
 									
-									<p>A Rogue-Like Dungeon Crawler, made using only Java and JavaFX.
-										<br>Developed as a Software Project by 4 students in 2nd Semester of Computer Science Media at at Stuttgart Media University.
-										<br><b>My Contribution:</b> 
-										<br>Healthsystem, Itemsystem, Fightsystem, Enemysystem and Sound. Also i was in response to fullfill the milestones and distributed work to my fellow students with the help of a trello board.
-										<br><b>Difficulties:</b> 
-										<br>The whole Team was very unexperienced in Software Development in general and had never made a Game. Nevertheless we achieved our goal via many hours of trial and error. 
+									<p>Project Massive is a third-person, massive-multiplayer online, playground, UE5 game prototype. Players can interact with the game world and each other.
+										A single Server Instance is hosted, to which all players are connected.
+										<br>The Prototype was developed with the Unreal Engine 5 Editors Sourcecode Build release version 5.2.0 as a Desktop project using Blueprints.
+										The Game Server was hosted on a scalable Kubernetes Cluster on Google-Cloud.
+										<br>Developed as a Software Project by 3 students over a period of 4 months, in the 4th Semester of Computer Science Media at Stuttgart Media University.
+										<br><b>Contribution:</b> 
+										<br>The idea of making a UE5 MMO Game based on a flexible containerized Server Structure, Project management, organization and documentation via monday.com, curated the used VCS "Helix Core" from Perforce, build and made sure the UE5 Sourcecode Build Editor Version worked for every Teammember. I implemented the grabbing/throwing and textchat mechanic, implemented the score system and the collision/overlapp handling, the distinction and assigment of points to a certain player on the server. I implemented the networking of all systems and build/packaged the gameserver. I designed the basketball quest, the glowing orb quest and the scoreboards.
+										<br><b>Difficulties: </b>
+										<br>To build/package a Gameserver and make use of the networking abilitys of the engine, it was neccessary to build the UE5 editor from the free available sourcecode. This process was complicated, time consuming and occupied a enormous amount of diskspace. The team had no experience with big game engines at all so we figured out how to use the UE5 Editor and Blueprints via learning-by-doing. Furthermore we never used a centralized VCS and only had little experience with Git. So using Perforce and UE5 challenged our team quite a bit. In lack of time and ressources we had to simplify systems and ideas. One Teammember was exlusively working on the complicated containerization process and so the workload distribution was very difficult. The whole Project was very ambitious for 3 students in only one semester of time, it took alot of effort to find the right scale.
 										<br><b>Improvements:</b> 
-										<br>With the use a Game Engine and better knowledge of librarys the development process could have been way more effective.
+										<br>In lack of time and knowhow we had to use several workarounds like the scoresystem in which we hardcoded the first three players on the scoreboard. This should be avoided and replaced by a rotation through all players on the server. We also could have scaled back parts of the project, for example the containerization to free up more resources. With more time and/or Teammembers we could have achieved the projects goal more effective. 
 										<br><b>Learnings:</b> 
-										<br>I learned a lot about how game code works and what game engines can take away from the developer. I improved my understanding of OOP, the language Java and Gitlabs as Version Control System.
+										<br>I gained experience with UE5 Blueprints programming and the network functionalities of the Editor. I experienced many difficulties with the Editor, Perforce as VCS and the whole Engine building process, i learned alot while fixing these problems. It is very important that at the start of a Project the scale of the Project itself matches the amount of ressources the Team can afford. Sometimes it is neccessary to cut parts and scale back the project to be able to fulfill milestones and deliver the origin vision of the Project.
 									</p>
 									
 									<ul class="actions special">
-										<li><a href="https://github.com/manueldanze/TheRogueQuarter" class="button">check it out</a></li>
+										<li><a href="https://github.com/manueldanze/Project_Massive" class="button">check it out</a></li>
 									</ul>
-								</article>
-
+								</article>	
+								
 								<article>
 									<header>
 										<h2>Game Master</h2>
 									</header>
 									
-									<a class="image fit"><img src="images/WorkinProgress_GameMaster.jpg" alt="" /></a>
+									<div class="image-container">
+										<div class="video-container"> <!-- Add the video-container class here -->
+											<video src="images/GameMasterPreview.mp4" class="gif" id="animatedGif2" loop muted playsinline></video>
+										</div>
+									</div>
 									
 									<p>A Bullethell-Arena Local-Multiplayer, Pixelart Game with a Game Master mechanic, made using Java, LibGDX and Box2D.
 										<br>Developed as a Software Project by 6 students in 3rd Semester of Computer Science Media at Stuttgart Media University.
@@ -108,30 +143,31 @@
 
 								<article>
 									<header>
-										<h2>Project Massive</h2>
+										<h2>The Rogue Quarter</h2>
 									</header>
-									
-									<a class="image fit"><img src="images/ProjectMassive-Plakat.jpg" alt="" /></a>
-									
-									<p>Project Massive is a third-person, massive-multiplayer online, playground, UE5 game prototype. Players can interact with the game world and each other.
-										A single Server Instance is hosted, to which all players are connected.
-										<br>The Prototype was developed with the Unreal Engine 5 Editors Sourcecode Build release version 5.2.0 as a Desktop project using Blueprints.
-										The Game Server was hosted on a scalable Kubernetes Cluster on Google-Cloud.
-										<br>Developed as a Software Project by 3 students over a period of 4 months, in the 4th Semester of Computer Science Media at Stuttgart Media University.
-										<br><b>Contribution:</b> 
-										<br>The idea of making a UE5 MMO Game based on a flexible containerized Server Structure, Project management, organization and documentation via monday.com, curated the used VCS "Helix Core" from Perforce, build and made sure the UE5 Sourcecode Build Editor Version worked for every Teammember. I implemented the grabbing/throwing and textchat mechanic, implemented the score system and the collision/overlapp handling, the distinction and assigment of points to a certain player on the server. I implemented the networking of all systems and build/packaged the gameserver. I designed the basketball quest, the glowing orb quest and the scoreboards.
-										<br><b>Difficulties: </b>
-										<br>To build/package a Gameserver and make use of the networking abilitys of the engine, it was neccessary to build the UE5 editor from the free available sourcecode. This process was complicated, time consuming and occupied a enormous amount of diskspace. The team had no experience with big game engines at all so we figured out how to use the UE5 Editor and Blueprints via learning-by-doing. Furthermore we never used a centralized VCS and only had little experience with Git. So using Perforce and UE5 challenged our team quite a bit. In lack of time and ressources we had to simplify systems and ideas. One Teammember was exlusively working on the complicated containerization process and so the workload distribution was very difficult. The whole Project was very ambitious for 3 students in only one semester of time, it took alot of effort to find the right scale.
+								
+									<div class="image-container">
+										<div class="video-container"> <!-- Add the video-container class here -->
+											<video src="images/RogueQuarterPreview.mp4" class="gif" id="animatedGif3" loop muted playsinline></video>
+										</div>
+									</div>
+
+									<p>A Rogue-Like Dungeon Crawler, made using only Java and JavaFX.
+										<br>Developed as a Software Project by 4 students in 2nd Semester of Computer Science Media at at Stuttgart Media University.
+										<br><b>My Contribution:</b> 
+										<br>Healthsystem, Itemsystem, Fightsystem, Enemysystem and Sound. Also i was in response to fullfill the milestones and distributed work to my fellow students with the help of a trello board.
+										<br><b>Difficulties:</b> 
+										<br>The whole Team was very unexperienced in Software Development in general and had never made a Game. Nevertheless we achieved our goal via many hours of trial and error. 
 										<br><b>Improvements:</b> 
-										<br>In lack of time and knowhow we had to use several workarounds like the scoresystem in which we hardcoded the first three players on the scoreboard. This should be avoided and replaced by a rotation through all players on the server. We also could have scaled back parts of the project, for example the containerization to free up more resources. With more time and/or Teammembers we could have achieved the projects goal more effective. 
+										<br>With the use a Game Engine and better knowledge of librarys the development process could have been way more effective.
 										<br><b>Learnings:</b> 
-										<br>I gained experience with UE5 Blueprints programming and the network functionalities of the Editor. I experienced many difficulties with the Editor, Perforce as VCS and the whole Engine building process, i learned alot while fixing these problems. It is very important that at the start of a Project the scale of the Project itself matches the amount of ressources the Team can afford. Sometimes it is neccessary to cut parts and scale back the project to be able to fulfill milestones and deliver the origin vision of the Project.
+										<br>I learned a lot about how game code works and what game engines can take away from the developer. I improved my understanding of OOP, the language Java and Gitlabs as Version Control System.
 									</p>
 									
 									<ul class="actions special">
-										<li><a href="https://github.com/manueldanze/Project_Massive" class="button">check it out</a></li>
+										<li><a href="https://github.com/manueldanze/TheRogueQuarter" class="button">check it out</a></li>
 									</ul>
-								</article>								
+								</article>
 
 							</section>
 
@@ -187,6 +223,68 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const gif1 = document.getElementById('animatedGif1');
+					const gif2 = document.getElementById('animatedGif2');
+					const gif3 = document.getElementById('animatedGif3');
+					
+					let isPlaying1 = false;
+					let isPlaying2 = false;
+					let isPlaying3 = false;
+			
+					gif1.addEventListener('mouseenter', () => {
+						if (!isPlaying1) {
+							gif1.play();
+							isPlaying1 = true;
+						}
+					});
+			
+					gif1.addEventListener('mouseleave', () => {
+						if (isPlaying1) {
+							gif1.pause();
+							isPlaying1 = false;
+						}
+					});
+			
+					gif2.addEventListener('mouseenter', () => {
+						if (!isPlaying2) {
+							gif2.play();
+							isPlaying2 = true;
+						}
+					});
+			
+					gif2.addEventListener('mouseleave', () => {
+						if (isPlaying2) {
+							gif2.pause();
+							isPlaying2 = false;
+						}
+					});
+			
+					gif3.addEventListener('mouseenter', () => {
+						if (!isPlaying3) {
+							gif3.play();
+							isPlaying3 = true;
+						}
+					});
+			
+					gif3.addEventListener('mouseleave', () => {
+						if (isPlaying3) {
+							gif3.pause();
+							isPlaying3 = false;
+						}
+					});
+				});
+			</script>
+			
+			
+			
+			
+			
+			
+			
+			
 
 	</body>
 </html>
