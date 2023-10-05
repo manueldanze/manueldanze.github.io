@@ -54,6 +54,29 @@
 			width: 100%;
 			height: 100%;
 		}
+
+		/* Apply these styles to your <ul> and <li> elements */
+		ul {
+			list-style-type: disc;
+			/* Use the bullet point marker (or another marker of your choice) */
+			margin-left: 20px;
+			/* Add some left margin to the entire list */
+			padding-left: 10px;
+			/* Add some left padding to the list items */
+		}
+
+		li {
+			text-align: left;
+			/* Ensure text is left-aligned */
+			margin-bottom: 5px;
+			/* Add some space between list items (optional) */
+		}
+
+		.article-container {
+			max-height: 750px;
+			/* Set the maximum height you desire */
+			overflow: auto;
+		}
 	</style>
 
 </head>
@@ -66,7 +89,7 @@
 		<!-- Intro -->
 		<div id="intro">
 			<h1>Student Game Developer</h1>
-			<p>A showcase of my projects and abilities</p>
+			<p>A showcase of my projects</p>
 			<ul class="actions">
 				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
 			</ul>
@@ -99,7 +122,7 @@
 					<h2><a href="#">My name is Manuel Danze</a></h2>
 					<p>I'm a computer science media student at Stuttgart Media University</p>
 					<p>I found my passion in computer science! looking forward to learn everything about software
-						development from scratch.
+						development.
 						<br>i Love making Games !
 					</p>
 				</header>
@@ -107,7 +130,6 @@
 
 			<!-- Posts -->
 			<section class="posts">
-
 				<article>
 					<header>
 						<h2>Project Massive</h2>
@@ -129,48 +151,77 @@
 									</div>
 									-->
 
-
-					<p>Project Massive is a third-person, massive-multiplayer online, playground, UE5 game prototype.
-						Players can interact with the game world and each other.
-						A single Server Instance is hosted, to which all players are connected.
-						<br>The Prototype was developed with the Unreal Engine 5 Editors Sourcecode Build release
-						version 5.2.0 as a Desktop project using Blueprints.
-						The Game Server was hosted on a scalable Kubernetes Cluster on Google-Cloud.
-						<br>Developed as a Software Project by 3 students over a period of 4 months, in the 4th Semester
-						of Computer Science Media at Stuttgart Media University.
-						<br><b>Contribution:</b>
-						<br>The idea of making a UE5 MMO Game based on a flexible containerized Server Structure,
-						Project management, organization and documentation via monday.com, curated the used VCS "Helix
-						Core" from Perforce, build and made sure the UE5 Sourcecode Build Editor Version worked for
-						every Teammember. I implemented the grabbing/throwing and textchat mechanic, implemented the
-						score system and the collision/overlapp handling, the distinction and assigment of points to a
-						certain player on the server. I implemented the networking of all systems and build/packaged the
-						gameserver. I designed the basketball quest, the glowing orb quest and the scoreboards.
-						<br><b>Difficulties: </b>
-						<br>To build/package a Gameserver and make use of the networking abilitys of the engine, it was
-						neccessary to build the UE5 editor from the free available sourcecode. This process was
-						complicated, time consuming and occupied a enormous amount of diskspace. The team had no
-						experience with big game engines at all so we figured out how to use the UE5 Editor and
-						Blueprints via learning-by-doing. Furthermore we never used a centralized VCS and only had
-						little experience with Git. So using Perforce and UE5 challenged our team quite a bit. In lack
-						of time and ressources we had to simplify systems and ideas. One Teammember was exlusively
-						working on the complicated containerization process and so the workload distribution was very
-						difficult. The whole Project was very ambitious for 3 students in only one semester of time, it
-						took alot of effort to find the right scale.
-						<br><b>Improvements:</b>
-						<br>In lack of time and knowhow we had to use several workarounds like the scoresystem in which
-						we hardcoded the first three players on the scoreboard. This should be avoided and replaced by a
-						rotation through all players on the server. We also could have scaled back parts of the project,
-						for example the containerization to free up more resources. With more time and/or Teammembers we
-						could have achieved the projects goal more effective.
-						<br><b>Learnings:</b>
-						<br>I gained experience with UE5 Blueprints programming and the network functionalities of the
-						Editor. I experienced many difficulties with the Editor, Perforce as VCS and the whole Engine
-						building process, i learned alot while fixing these problems. It is very important that at the
-						start of a Project the scale of the Project itself matches the amount of ressources the Team can
-						afford. Sometimes it is neccessary to cut parts and scale back the project to be able to fulfill
-						milestones and deliver the origin vision of the Project.
-					</p>
+					<div class="article-container">
+						<p>
+						<ul></ul>
+						A third-person, online-multiplayer playground prototype. Created with the Unreal Engine 5.2 (Sourcecode Build) using UE5 Blueprints.
+						The Game Server was hosted on a Kubernetes Cluster on Google-Cloud.
+						<br>
+						<br>
+						<i>Developed as a Software Project by 3 students over a period of 4 months, in the 4th Semester
+							of Computer Science Media at Stuttgart Media University.</i>
+						<br>
+						<br>
+						<b>My Contribution</b>
+						<ul>
+							<li>The idea of making a UE5 MMO Game based on a flexible containerized Server Structure
+							</li>
+							<li>Project management e.g organization and documentation via monday.com</li>
+							<li>Curation of the used VCS "Helix Core" from Perforce</li>
+							<li>Build and made sure the UE5 Sourcecode Build Editor Version worked for every Teammember</li>
+							<li>Grabbing/throwing mechanic </li>
+							<li>textchat mechanic</li>
+							<li>Score system and the collision/overlapp handling</li>
+							<li>distinction and assigment of points to a certain player on the server</li>
+							<li>Networking of all systems and build/packaged the gameserver</li>
+							<li>Basketball quest, the glowing orb quest and the scoreboards</li>
+						</ul>
+						<b>Difficulties</b>
+						<ul>
+							<li>To build/package a Gameserver and make use of the networking abilitys of the engine, it
+								was
+								neccessary to build the UE5 editor from the free available sourcecode. This process was
+								complicated, time consuming and occupied a enormous amount of diskspace</li>
+							<li>The team had no experience with big game engines at all so we figured out how to use the
+								UE5
+								Editor and Blueprints via learning-by-doing</li>
+							<li>We never used a centralized VCS and only had little experience with Git. So using
+								Perforce
+								and UE5 challenged our team quite a bit</li>
+							<li>In lack of time and ressources we had to simplify systems and ideas. One Teammember was
+								exlusively working on the complicated containerization process and so the workload
+								distribution was very difficult</li>
+							<li>The whole Project was very ambitious for 3 students and only one semester of time, it took
+								alot of effort to find the right scale</li>
+						</ul>
+						<b>Improvements</b>
+						<ul>
+							<li>In lack of time and knowhow we had to use several workarounds like the score system in
+								which
+								we hardcoded the first three players on the scoreboard. This should be avoided and
+								replaced
+								by a rotation through all players on the server</li>
+							<li>We also could have scaled back parts of the project, for example the containerization to
+								free up more resources. With more time and/or Teammembers we could have achieved the
+								projects goal more effective</li>
+						</ul>
+						<b>Learnings</b>
+						<ul>
+							<li>I gained experience with UE5 Blueprints programming and the network functionalities of
+								the
+								Editor</li>
+							<li>I had many difficulties with the Editor, Perforce as VCS and the whole Engine
+								building process, i learned alot while fixing these problems</li>
+							<li>It is very important that at the start of a Project the scale of the Project itself
+								matches
+								the amount of ressources the Team can afford. Sometimes it is neccessary to cut parts
+								and
+								scale back the project to be able to fulfill milestones and deliver the origin vision of
+								the
+								Project.</li>
+						</ul>
+						</p>
+					</div>
 
 					<ul class="actions special">
 						<li><a href="https://github.com/manueldanze/Project_Massive" class="button">check it out</a>
@@ -185,7 +236,8 @@
 
 					<div class="image-container">
 						<div class="youtube-container"> <!-- Add the youtube-container class here -->
-							<iframe src="https://www.youtube.com/embed/6JZvSB8ntfI" frameborder="0" allowfullscreen></iframe>
+							<iframe src="https://www.youtube.com/embed/6JZvSB8ntfI" frameborder="0"
+								allowfullscreen></iframe>
 						</div>
 					</div>
 
@@ -197,31 +249,56 @@
 						</div>
 					</div>
 					-->
-					<p>A Bullethell-Arena Local-Multiplayer, Pixelart Game with a Game Master mechanic, made using Java,
-						LibGDX and Box2D.
-						<br>Developed as a Software Project by 6 students in 3rd Semester of Computer Science Media at
-						Stuttgart Media University.
-						<br><b>My Contribution:</b>
-						<br>Idea and loop, logic of the menu screens, connection of different game systems with the
-						Kryonet networking part, logic of ingame screen overlays, object collision and overlapp handling
-						via Box2D physics library, loading sprites from a spritesheet, simple CI/CD Pipeline in Gitlabs.
-						Furthermore i suggested using SCRUM as part of a agile software development principle for this
-						project. I took responsability for the Scrum Master position, moderated the meetings and curated
-						the Gitlab ticket system "Issues", the changelog and readme files.
-						<br><b>Difficulties:</b>
-						<br>It was a challange to keep all 6 team members focused and concentrate the essenz of all
-						ideas into the origin vision of the game, without changing the whole concept. We also ran into
-						big issues trying to implement the Kryonet Networking library and the Box2D physics library
-						halfway during the development and not from the start.
-						<br><b>Improvements:</b>
-						<br>A good Softwarearchitecture and a idea of the necessary librarys and systems right at the
-						beginning is very helpful to avoid time consuming changes during the development.
-						<br><b>Learnings:</b>
-						<br>I recognized how crucial good planning of the architecture, concept and used librarys is. I
-						learned how professional software development containes much more than just writing code. I got
-						used to work with a ticket system, how to curate a changlog and set up a CI/CD pipeline.
-					</p>
+					<div class="article-container">
+						<p>
+						<ul></ul>
+						A topdown Bullethell-Arena Local-Multiplayer with a Game Master mechanic. Created using
+						Java, LibGDX and Box2D.
+						<br>
+						<br>
+						<i>Developed as a Software Project by 6 students in 3rd Semester of Computer Science Media at
+							Stuttgart Media University.</i>
+						<br>
+						<br>
+						<b>My Contribution</b>
+						<ul>
+							<li>Game idea of a bullet-hell arena multiplayer</li>
+							<li>Logic of the menu screens</li>
+							<li>Connection of different game systems with the Kryonet networking part</li>
+							<li>Logic of ingame screen overlays</li>
+							<li>Object collision and overlapp handling via Box2D physics library</li>
+							<li>Loading sprites from a spritesheet</li>
+							<li>Simple CI/CD Pipeline in Gitlabs</li>
+							<li>I suggested using SCRUM as part of a agile software development principle for this
+								project. I took responsability for the Scrum Master position, moderated the meetings and
+								curated the Gitlab ticket system "Issues", the changelog and readme files</li>
+						</ul>
 
+						<b>Difficulties</b>
+						<ul>
+							<li>It was a challenge to keep all 6 team members focused and concentrate the essenz of all
+								ideas into the origin vision of the game without changing the whole concept</li>
+							<li>We had issues with different ideas for the game design of the core gameplay, which in the end did not workout as planned and ended up in a non existing gameplay loop</li>		
+							<li>We also ran into big issues trying to implement the Kryonet Networking library and the
+								Box2D physics library halfway during the development and not from the start</li>
+						</ul>
+						<b>Improvements</b>
+						<ul>
+							<li>A good Softwarearchitecture and a idea of the necessary librarys and systems right at
+								the beginning could have been very helpful to avoid the time consuming changes during the development
+							</li>
+							<li>Better communication and idea of the basic gameplay would have lead to a more satisfying development process and final result</li>
+						</ul>
+						<b>Learnings</b>
+						<ul>
+							<li>I learned how to use librarys and frameworks and made my first experiences with LibGDX and Box2D</li>
+							<li>I experienced the importance of interesting and consistent game design to keep the gameplay loop working</li>
+							<li>I recognized how crucial good planning of the architecture, concept and used librarys is</li>
+							<li>I got used to work with a ticket system, how to curate a changlog and set up a CI/CD
+								pipeline</li>
+						</ul>
+						</p>
+					</div>
 					<ul class="actions special">
 						<li><a href="https://github.com/manueldanze/Game_Master" class="button">check it out</a></li>
 					</ul>
@@ -247,25 +324,41 @@
 						</div>
 					</div>
 				-->
-					<p>A Rogue-Like Dungeon Crawler, made using only Java and JavaFX.
-						<br>Developed as a Software Project by 4 students in 2nd Semester of Computer Science Media at
-						at Stuttgart Media University.
-						<br><b>My Contribution:</b>
-						<br>Healthsystem, Itemsystem, Fightsystem, Enemysystem and Sound. Also i was in response to
-						fullfill the milestones and distributed work to my fellow students with the help of a trello
-						board.
-						<br><b>Difficulties:</b>
-						<br>The whole Team was very unexperienced in Software Development in general and had never made
-						a Game. Nevertheless we achieved our goal via many hours of trial and error.
-						<br><b>Improvements:</b>
-						<br>With the use a Game Engine and better knowledge of librarys the development process could
-						have been way more effective.
-						<br><b>Learnings:</b>
-						<br>I learned a lot about how game code works and what game engines can take away from the
-						developer. I improved my understanding of OOP, the language Java and Gitlabs as Version Control
-						System.
-					</p>
-
+					<div class="article-container">
+						<p>
+						<ul></ul>
+						A Rogue-Like Dungeon Crawler, created using Java and JavaFX.
+						<br>
+						<br>
+						<i>Developed as a Software Project by 4 students in 2nd Semester of Computer Science Media at
+							at Stuttgart Media University.</i>
+						<br>
+						<br>
+						<b>My Contribution</b>
+						<ul>
+							<li>Healthsystem, Itemsystem, Fightsystem, Enemysystem and Sound</li>
+							<li>i was in response to fullfill the milestones and distributed work to my fellow students
+								with the help of a trello board</li>
+						</ul>
+						<b>Difficulties</b>
+						<ul>
+							<li>The whole Team was very unexperienced in Software Development in general and had never
+								made a Game. We achieved our goal via many hours of trial and error</li>
+						</ul>
+						<b>Improvements</b>
+						<ul>
+							<li>With the use a Game Engine and better knowledge of librarys the development process
+								could have been way more effective.</li>
+						</ul>
+						<b>Learnings</b>
+						<ul>
+							<li>I learned a lot about how game code works and what game engines can take away from the
+								developer</li>
+							<li>I improved my understanding of OOP, the language Java and Gitlabs as Version Control
+								System</li>
+						</ul>
+						</p>
+					</div>
 					<ul class="actions special">
 						<li><a href="https://github.com/manueldanze/TheRogueQuarter" class="button">check it out</a>
 						</li>
