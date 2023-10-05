@@ -5,174 +5,277 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Portfolio Manuel Danze</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<style>
-			.video-container {
-				position: relative;
-				width: 100%;
-				max-width: 100%; /* Set max-width to 100% to scale with available space */
-				margin: 0 auto; /* Center the video container horizontally */
-				overflow: hidden;
-			}
-		
-			.video-container video {
-				width: 100%;
-				height: auto;
-				display: block;
-				object-fit: cover;
-				transition: transform 0.2s ease-out;
-				transform-origin: center center;
-			}
-		
-			.video-container:hover video {
-				transform: scale(1.05);
-			}
-		</style>
+<head>
+	<title>Portfolio Manuel Danze</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
 
-	</head>
-	<body class="is-preload">
+	<style>
+		.video-container {
+			position: relative;
+			width: 100%;
+			max-width: 100%;
+			/* Set max-width to 100% to scale with available space */
+			margin: 0 auto;
+			/* Center the video container horizontally */
+			overflow: hidden;
+		}
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		.video-container video {
+			width: 100%;
+			height: auto;
+			display: block;
+			object-fit: cover;
+			transition: transform 0.2s ease-out;
+			transform-origin: center center;
+		}
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Student Game Developer</h1>
-						<p>A showcase of my projects and abilities</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+		.video-container:hover video {
+			transform: scale(1.05);
+		}
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Portfolio</a>
+		.youtube-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			/* 16:9 aspect ratio (default for YouTube videos) */
+			height: 0;
+			overflow: hidden;
+		}
+
+		.youtube-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>Student Game Developer</h1>
+			<p>A showcase of my projects and abilities</p>
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Portfolio</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">This is Me</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/manuel-danze" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/manueldanze" class="icon brands fa-github"><span
+							class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<h2><a href="#">My name is Manuel Danze</a></h2>
+					<p>I'm a computer science media student at Stuttgart Media University</p>
+					<p>I found my passion in computer science! looking forward to learn everything about software
+						development from scratch.
+						<br>i Love making Games !
+					</p>
+				</header>
+			</article>
+
+			<!-- Posts -->
+			<section class="posts">
+
+				<article>
+					<header>
+						<h2>Project Massive</h2>
 					</header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">This is Me</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/manuel-danze" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/manueldanze" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+					<div class="image-container">
+						<div class="youtube-container"> <!-- Add the youtube-container class here -->
+							<iframe src="https://www.youtube.com/embed/qYzS289E2oM" frameborder="0"
+								allowfullscreen></iframe>
+						</div>
+					</div>
 
-				<!-- Main -->
-					<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">My name is Manuel Danze</a></h2>
-									<p>I'm a computer science media student at Stuttgart Media University</p>
-									<p>I found my passion in computer science! looking forward to learn everything about software development from scratch.
-										<br>i Love making Games !</p>
-								</header>
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-
-								<article>
-									<header>
-										<h2>Project Massive</h2>
-									</header>
-									
+					<!--
 									<div class="image-container">
-										<div class="video-container"> <!-- Add the video-container class here -->
+										<div class="video-container"> 
 											<video src="images/ProjectMassivePreview.mp4" class="gif" id="animatedGif1" loop muted playsinline></video>
 										</div>
 									</div>
-									
-									<p>Project Massive is a third-person, massive-multiplayer online, playground, UE5 game prototype. Players can interact with the game world and each other.
-										A single Server Instance is hosted, to which all players are connected.
-										<br>The Prototype was developed with the Unreal Engine 5 Editors Sourcecode Build release version 5.2.0 as a Desktop project using Blueprints.
-										The Game Server was hosted on a scalable Kubernetes Cluster on Google-Cloud.
-										<br>Developed as a Software Project by 3 students over a period of 4 months, in the 4th Semester of Computer Science Media at Stuttgart Media University.
-										<br><b>Contribution:</b> 
-										<br>The idea of making a UE5 MMO Game based on a flexible containerized Server Structure, Project management, organization and documentation via monday.com, curated the used VCS "Helix Core" from Perforce, build and made sure the UE5 Sourcecode Build Editor Version worked for every Teammember. I implemented the grabbing/throwing and textchat mechanic, implemented the score system and the collision/overlapp handling, the distinction and assigment of points to a certain player on the server. I implemented the networking of all systems and build/packaged the gameserver. I designed the basketball quest, the glowing orb quest and the scoreboards.
-										<br><b>Difficulties: </b>
-										<br>To build/package a Gameserver and make use of the networking abilitys of the engine, it was neccessary to build the UE5 editor from the free available sourcecode. This process was complicated, time consuming and occupied a enormous amount of diskspace. The team had no experience with big game engines at all so we figured out how to use the UE5 Editor and Blueprints via learning-by-doing. Furthermore we never used a centralized VCS and only had little experience with Git. So using Perforce and UE5 challenged our team quite a bit. In lack of time and ressources we had to simplify systems and ideas. One Teammember was exlusively working on the complicated containerization process and so the workload distribution was very difficult. The whole Project was very ambitious for 3 students in only one semester of time, it took alot of effort to find the right scale.
-										<br><b>Improvements:</b> 
-										<br>In lack of time and knowhow we had to use several workarounds like the scoresystem in which we hardcoded the first three players on the scoreboard. This should be avoided and replaced by a rotation through all players on the server. We also could have scaled back parts of the project, for example the containerization to free up more resources. With more time and/or Teammembers we could have achieved the projects goal more effective. 
-										<br><b>Learnings:</b> 
-										<br>I gained experience with UE5 Blueprints programming and the network functionalities of the Editor. I experienced many difficulties with the Editor, Perforce as VCS and the whole Engine building process, i learned alot while fixing these problems. It is very important that at the start of a Project the scale of the Project itself matches the amount of ressources the Team can afford. Sometimes it is neccessary to cut parts and scale back the project to be able to fulfill milestones and deliver the origin vision of the Project.
-									</p>
-									
-									<ul class="actions special">
-										<li><a href="https://github.com/manueldanze/Project_Massive" class="button">check it out</a></li>
-									</ul>
-								</article>	
-								
-								<article>
-									<header>
-										<h2>Game Master</h2>
-									</header>
-									
-									<div class="image-container">
-										<div class="video-container"> <!-- Add the video-container class here -->
-											<video src="images/GameMasterPreview.mp4" class="gif" id="animatedGif2" loop muted playsinline></video>
-										</div>
-									</div>
-									
-									<p>A Bullethell-Arena Local-Multiplayer, Pixelart Game with a Game Master mechanic, made using Java, LibGDX and Box2D.
-										<br>Developed as a Software Project by 6 students in 3rd Semester of Computer Science Media at Stuttgart Media University.
-										<br><b>My Contribution:</b>
-										<br>Idea and loop, logic of the menu screens, connection of different game systems with the Kryonet networking part, logic of ingame screen overlays, object collision and overlapp handling via Box2D physics library, loading sprites from a spritesheet, simple CI/CD Pipeline in Gitlabs. Furthermore i suggested using SCRUM as part of a agile software development principle for this project. I took responsability for the Scrum Master position, moderated the meetings and curated the Gitlab ticket system "Issues", the changelog and readme files.
-										<br><b>Difficulties:</b> 
-										<br>It was a challange to keep all 6 team members focused and concentrate the essenz of all ideas into the origin vision of the game, without changing the whole concept. We also ran into big issues trying to implement the Kryonet Networking library and the Box2D physics library halfway during the development and not from the start.
-										<br><b>Improvements:</b> 
-										<br>A good Softwarearchitecture and a idea of the necessary librarys and systems right at the beginning is very helpful to avoid time consuming changes during the development.		
-										<br><b>Learnings:</b> 
-										<br>I recognized how crucial good planning of the architecture, concept and used librarys is. I learned how professional software development containes much more than just writing code. I got used to work with a ticket system, how to curate a changlog and set up a CI/CD pipeline.
-									</p>
-									
-									<ul class="actions special">
-										<li><a href="https://github.com/manueldanze/Game_Master" class="button">check it out</a></li>
-									</ul>
-								</article>
+									-->
 
-								<article>
-									<header>
-										<h2>The Rogue Quarter</h2>
-									</header>
-								
-									<div class="image-container">
-										<div class="video-container"> <!-- Add the video-container class here -->
-											<video src="images/RogueQuarterPreview.mp4" class="gif" id="animatedGif3" loop muted playsinline></video>
-										</div>
-									</div>
 
-									<p>A Rogue-Like Dungeon Crawler, made using only Java and JavaFX.
-										<br>Developed as a Software Project by 4 students in 2nd Semester of Computer Science Media at at Stuttgart Media University.
-										<br><b>My Contribution:</b> 
-										<br>Healthsystem, Itemsystem, Fightsystem, Enemysystem and Sound. Also i was in response to fullfill the milestones and distributed work to my fellow students with the help of a trello board.
-										<br><b>Difficulties:</b> 
-										<br>The whole Team was very unexperienced in Software Development in general and had never made a Game. Nevertheless we achieved our goal via many hours of trial and error. 
-										<br><b>Improvements:</b> 
-										<br>With the use a Game Engine and better knowledge of librarys the development process could have been way more effective.
-										<br><b>Learnings:</b> 
-										<br>I learned a lot about how game code works and what game engines can take away from the developer. I improved my understanding of OOP, the language Java and Gitlabs as Version Control System.
-									</p>
-									
-									<ul class="actions special">
-										<li><a href="https://github.com/manueldanze/TheRogueQuarter" class="button">check it out</a></li>
-									</ul>
-								</article>
+					<p>Project Massive is a third-person, massive-multiplayer online, playground, UE5 game prototype.
+						Players can interact with the game world and each other.
+						A single Server Instance is hosted, to which all players are connected.
+						<br>The Prototype was developed with the Unreal Engine 5 Editors Sourcecode Build release
+						version 5.2.0 as a Desktop project using Blueprints.
+						The Game Server was hosted on a scalable Kubernetes Cluster on Google-Cloud.
+						<br>Developed as a Software Project by 3 students over a period of 4 months, in the 4th Semester
+						of Computer Science Media at Stuttgart Media University.
+						<br><b>Contribution:</b>
+						<br>The idea of making a UE5 MMO Game based on a flexible containerized Server Structure,
+						Project management, organization and documentation via monday.com, curated the used VCS "Helix
+						Core" from Perforce, build and made sure the UE5 Sourcecode Build Editor Version worked for
+						every Teammember. I implemented the grabbing/throwing and textchat mechanic, implemented the
+						score system and the collision/overlapp handling, the distinction and assigment of points to a
+						certain player on the server. I implemented the networking of all systems and build/packaged the
+						gameserver. I designed the basketball quest, the glowing orb quest and the scoreboards.
+						<br><b>Difficulties: </b>
+						<br>To build/package a Gameserver and make use of the networking abilitys of the engine, it was
+						neccessary to build the UE5 editor from the free available sourcecode. This process was
+						complicated, time consuming and occupied a enormous amount of diskspace. The team had no
+						experience with big game engines at all so we figured out how to use the UE5 Editor and
+						Blueprints via learning-by-doing. Furthermore we never used a centralized VCS and only had
+						little experience with Git. So using Perforce and UE5 challenged our team quite a bit. In lack
+						of time and ressources we had to simplify systems and ideas. One Teammember was exlusively
+						working on the complicated containerization process and so the workload distribution was very
+						difficult. The whole Project was very ambitious for 3 students in only one semester of time, it
+						took alot of effort to find the right scale.
+						<br><b>Improvements:</b>
+						<br>In lack of time and knowhow we had to use several workarounds like the scoresystem in which
+						we hardcoded the first three players on the scoreboard. This should be avoided and replaced by a
+						rotation through all players on the server. We also could have scaled back parts of the project,
+						for example the containerization to free up more resources. With more time and/or Teammembers we
+						could have achieved the projects goal more effective.
+						<br><b>Learnings:</b>
+						<br>I gained experience with UE5 Blueprints programming and the network functionalities of the
+						Editor. I experienced many difficulties with the Editor, Perforce as VCS and the whole Engine
+						building process, i learned alot while fixing these problems. It is very important that at the
+						start of a Project the scale of the Project itself matches the amount of ressources the Team can
+						afford. Sometimes it is neccessary to cut parts and scale back the project to be able to fulfill
+						milestones and deliver the origin vision of the Project.
+					</p>
 
-							</section>
+					<ul class="actions special">
+						<li><a href="https://github.com/manueldanze/Project_Massive" class="button">check it out</a>
+						</li>
+					</ul>
+				</article>
 
-						<!-- Footer -->
-						<!--
+				<article>
+					<header>
+						<h2>Game Master</h2>
+					</header>
+
+					<div class="image-container">
+						<div class="youtube-container"> <!-- Add the youtube-container class here -->
+							<iframe src="https://www.youtube.com/embed/6JZvSB8ntfI" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<!--
+					<div class="image-container">
+						<div class="video-container">
+							<video src="images/GameMasterPreview.mp4" class="gif" id="animatedGif2" loop muted
+								playsinline></video>
+						</div>
+					</div>
+					-->
+					<p>A Bullethell-Arena Local-Multiplayer, Pixelart Game with a Game Master mechanic, made using Java,
+						LibGDX and Box2D.
+						<br>Developed as a Software Project by 6 students in 3rd Semester of Computer Science Media at
+						Stuttgart Media University.
+						<br><b>My Contribution:</b>
+						<br>Idea and loop, logic of the menu screens, connection of different game systems with the
+						Kryonet networking part, logic of ingame screen overlays, object collision and overlapp handling
+						via Box2D physics library, loading sprites from a spritesheet, simple CI/CD Pipeline in Gitlabs.
+						Furthermore i suggested using SCRUM as part of a agile software development principle for this
+						project. I took responsability for the Scrum Master position, moderated the meetings and curated
+						the Gitlab ticket system "Issues", the changelog and readme files.
+						<br><b>Difficulties:</b>
+						<br>It was a challange to keep all 6 team members focused and concentrate the essenz of all
+						ideas into the origin vision of the game, without changing the whole concept. We also ran into
+						big issues trying to implement the Kryonet Networking library and the Box2D physics library
+						halfway during the development and not from the start.
+						<br><b>Improvements:</b>
+						<br>A good Softwarearchitecture and a idea of the necessary librarys and systems right at the
+						beginning is very helpful to avoid time consuming changes during the development.
+						<br><b>Learnings:</b>
+						<br>I recognized how crucial good planning of the architecture, concept and used librarys is. I
+						learned how professional software development containes much more than just writing code. I got
+						used to work with a ticket system, how to curate a changlog and set up a CI/CD pipeline.
+					</p>
+
+					<ul class="actions special">
+						<li><a href="https://github.com/manueldanze/Game_Master" class="button">check it out</a></li>
+					</ul>
+				</article>
+
+				<article>
+					<header>
+						<h2>The Rogue Quarter</h2>
+					</header>
+
+					<div class="image-container">
+						<div class="youtube-container"> <!-- Add the youtube-container class here -->
+							<iframe src="https://www.youtube.com/embed/ZvMYJ8QvC4o" frameborder="0"
+								allowfullscreen></iframe>
+						</div>
+					</div>
+
+					<!--
+					<div class="image-container">
+						<div class="video-container">
+							<video src="images/RogueQuarterPreview.mp4" class="gif" id="animatedGif3" loop muted
+								playsinline></video>
+						</div>
+					</div>
+				-->
+					<p>A Rogue-Like Dungeon Crawler, made using only Java and JavaFX.
+						<br>Developed as a Software Project by 4 students in 2nd Semester of Computer Science Media at
+						at Stuttgart Media University.
+						<br><b>My Contribution:</b>
+						<br>Healthsystem, Itemsystem, Fightsystem, Enemysystem and Sound. Also i was in response to
+						fullfill the milestones and distributed work to my fellow students with the help of a trello
+						board.
+						<br><b>Difficulties:</b>
+						<br>The whole Team was very unexperienced in Software Development in general and had never made
+						a Game. Nevertheless we achieved our goal via many hours of trial and error.
+						<br><b>Improvements:</b>
+						<br>With the use a Game Engine and better knowledge of librarys the development process could
+						have been way more effective.
+						<br><b>Learnings:</b>
+						<br>I learned a lot about how game code works and what game engines can take away from the
+						developer. I improved my understanding of OOP, the language Java and Gitlabs as Version Control
+						System.
+					</p>
+
+					<ul class="actions special">
+						<li><a href="https://github.com/manueldanze/TheRogueQuarter" class="button">check it out</a>
+						</li>
+					</ul>
+				</article>
+
+			</section>
+
+			<!-- Footer -->
+			<!--
 							<footer>
 								<div class="pagination">
 									<a href="#" class="previous">Prev</a>
@@ -188,103 +291,109 @@
 							</footer>
 						-->
 
-					</div>
+		</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						
-						<section class="split contact">
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:manueldanze@gmx.de">manueldanze@gmx.de</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/manuel-danze" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/manueldanze" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+		<!-- Footer -->
+		<footer id="footer">
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Manuel Danze</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+			<section class="split contact">
+				<section>
+					<h3>Email</h3>
+					<p><a href="mailto:manueldanze@gmx.de">manueldanze@gmx.de</a></p>
+				</section>
+				<section>
+					<h3>Social</h3>
+					<ul class="icons alt">
+						<li><a href="https://www.linkedin.com/in/manuel-danze" class="icon brands alt fa-linkedin"><span
+									class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/manueldanze" class="icon brands alt fa-github"><span
+									class="label">GitHub</span></a></li>
+					</ul>
+				</section>
+			</section>
+		</footer>
 
-			</div>
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Manuel Danze</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	</div>
 
-			<script>
-				document.addEventListener("DOMContentLoaded", function () {
-					const gif1 = document.getElementById('animatedGif1');
-					const gif2 = document.getElementById('animatedGif2');
-					const gif3 = document.getElementById('animatedGif3');
-					
-					let isPlaying1 = false;
-					let isPlaying2 = false;
-					let isPlaying3 = false;
-			
-					gif1.addEventListener('mouseenter', () => {
-						if (!isPlaying1) {
-							gif1.play();
-							isPlaying1 = true;
-						}
-					});
-			
-					gif1.addEventListener('mouseleave', () => {
-						if (isPlaying1) {
-							gif1.pause();
-							isPlaying1 = false;
-						}
-					});
-			
-					gif2.addEventListener('mouseenter', () => {
-						if (!isPlaying2) {
-							gif2.play();
-							isPlaying2 = true;
-						}
-					});
-			
-					gif2.addEventListener('mouseleave', () => {
-						if (isPlaying2) {
-							gif2.pause();
-							isPlaying2 = false;
-						}
-					});
-			
-					gif3.addEventListener('mouseenter', () => {
-						if (!isPlaying3) {
-							gif3.play();
-							isPlaying3 = true;
-						}
-					});
-			
-					gif3.addEventListener('mouseleave', () => {
-						if (isPlaying3) {
-							gif3.pause();
-							isPlaying3 = false;
-						}
-					});
-				});
-			</script>
-			
-			
-			
-			
-			
-			
-			
-			
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const gif1 = document.getElementById('animatedGif1');
+			const gif2 = document.getElementById('animatedGif2');
+			const gif3 = document.getElementById('animatedGif3');
+
+			let isPlaying1 = false;
+			let isPlaying2 = false;
+			let isPlaying3 = false;
+
+			gif1.addEventListener('mouseenter', () => {
+				if (!isPlaying1) {
+					gif1.play();
+					isPlaying1 = true;
+				}
+			});
+
+			gif1.addEventListener('mouseleave', () => {
+				if (isPlaying1) {
+					gif1.pause();
+					isPlaying1 = false;
+				}
+			});
+
+			gif2.addEventListener('mouseenter', () => {
+				if (!isPlaying2) {
+					gif2.play();
+					isPlaying2 = true;
+				}
+			});
+
+			gif2.addEventListener('mouseleave', () => {
+				if (isPlaying2) {
+					gif2.pause();
+					isPlaying2 = false;
+				}
+			});
+
+			gif3.addEventListener('mouseenter', () => {
+				if (!isPlaying3) {
+					gif3.play();
+					isPlaying3 = true;
+				}
+			});
+
+			gif3.addEventListener('mouseleave', () => {
+				if (isPlaying3) {
+					gif3.pause();
+					isPlaying3 = false;
+				}
+			});
+		});
+	</script>
+
+
+
+
+
+
+
+
+
+</body>
+
 </html>
